@@ -5,7 +5,6 @@ declare(strict_types=1);
 use App\Models\Tenant;
 use Stancl\Tenancy\Database\Models\Domain;
 
-
 return [
     'tenant_model' => Tenant::class,
     'id_generator' => Stancl\Tenancy\UUIDGenerator::class,
@@ -18,7 +17,7 @@ return [
      * Only relevant if you're using the domain or subdomain identification middleware.
      */
     'central_domains' => [
-        'localhost'
+        'localhost',
     ],
 
     /**
